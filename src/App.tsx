@@ -29,10 +29,10 @@ function App() {
           </a>
 
           <nav className="hidden items-center gap-8 xl:flex" aria-label="Main navigation">
-            <a className="nav-link" href="#features">Products <ChevronDown aria-hidden="true" /></a>
-            <a className="nav-link" href="#work-together">Solutions <ChevronDown aria-hidden="true" /></a>
-            <a className="nav-link" href="#resources">Resources <ChevronDown aria-hidden="true" /></a>
-            <a className="nav-link" href="#plans">Pricing <ChevronDown aria-hidden="true" /></a>
+            <a className="inline-flex items-center gap-1.5 whitespace-nowrap text-sm text-white/90 transition hover:text-white" href="#features">Products <ChevronDown aria-hidden="true" className="h-4 w-4 shrink-0" /></a>
+            <a className="inline-flex items-center gap-1.5 whitespace-nowrap text-sm text-white/90 transition hover:text-white" href="#work-together">Solutions <ChevronDown aria-hidden="true" className="h-4 w-4 shrink-0" /></a>
+            <a className="inline-flex items-center gap-1.5 whitespace-nowrap text-sm text-white/90 transition hover:text-white" href="#resources">Resources <ChevronDown aria-hidden="true" className="h-4 w-4 shrink-0" /></a>
+            <a className="inline-flex items-center gap-1.5 whitespace-nowrap text-sm text-white/90 transition hover:text-white" href="#plans">Pricing <ChevronDown aria-hidden="true" className="h-4 w-4 shrink-0" /></a>
           </nav>
 
           <div className="hidden items-center gap-4 xl:flex">
