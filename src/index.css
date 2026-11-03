@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Manrope', sans-serif;
+  --color-navy: #043873;
+  --color-blue: #4f9cf9;
+  --color-sky: #a7cefc;
+  --color-sun: #ffe492;
+  --color-ink: #212529;
+  --color-muted: #5f6b7a;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #043873;
+  background: #ffe492;
+}
+
+.hero-pattern {
+  background-image: repeating-radial-gradient(ellipse at 48% 58%, transparent 0 42px, rgb(79 156 249 / 10%) 43px 44px, transparent 45px 54px);
+}
+
+.marker-underline {
+  position: relative;
+  isolation: isolate;
+  white-space: nowrap;
+}
+
+.marker-underline::after {
+  position: absolute;
+  z-index: -1;
+  right: -0.08em;
+  bottom: 0.02em;
+  left: -0.08em;
+  height: 0.22em;
+  content: '';
+  background: #ffe492;
+  transform: rotate(-1.5deg);
+}
+
+.orbit-ring {
+  border: 1px dashed rgb(79 156 249 / 55%);
+  border-radius: 9999px;
+}
+
+.rise-in {
+  animation: rise-in 700ms both;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
